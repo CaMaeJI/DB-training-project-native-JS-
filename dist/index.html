@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="wrapper">
+        <button class="post-btn">добавить</button>
+        <div class="search-wrapper">
+            <input class="find-person" type="" placeholder="...">
+            <button class="find-btn">найти</button>
+        </div>
+    </div>
+    <div class="wrapper wrapper_main">
+        <button class="filter main btn1">ID</button>
+        <button class="filter main btn2">First Name</button>
+        <button class="filter main btn3">Last Name</button>
+        <button class="filter main btn4">email</button>
+        <button class="filter main btn5">phone</button>
+    </div>
+
+    <div class="selectDB">
+        <button class="selectDB-big">БОЛЬШАЯ БАЗА ДАННЫХ</button>
+        <button class="selectDB-small">МАЛАЯ БАЗА ДАННЫХ</button>
+    </div>
+    <div class="modal">
+        <button class="modal-btn">закрыть</button>
+    </div>
+    <form action="" class="modal-post">
+        <div class="modal-post-wrapper">
+            <div>
+                <label class="modal-post-label" for="txtID">ID</label>
+                <input id="txtID" type="text" class="input-id" required>
+            </div>
+            <div>
+                <label class="modal-post-label" for="txtFN">First Name</label>
+                <input id="txtFN" type="text" class="input-firstname" required>
+            </div>
+            <div>
+                <label class="modal-post-label" for="txtLN">Last Name</label>
+                <input id="txtLN" type="text" class="input-lastname" required>
+            </div>
+            <div>
+                <label class="modal-post-label" for="txtEmail">Email</label>
+                <input id="txtEmail" type="email" class="input-email" required>
+            </div>
+            <div>
+                <label class="modal-post-label" for="txtPhone">Phone</label>
+                <input id="txtPhone" type="text" class="input-phone" required>
+            </div>
+            <div>
+                <label class="modal-post-label" for="txtStreet">Street addres</label>
+                <input id="txtStreet" type="text" class="input-streetaddres" required>
+            </div>
+            <div>
+                <label class="modal-post-label" for="txtCity">City</label>
+                <input id="txtCity" type="text" class="input-city" required>
+            </div>
+            <div>
+                <label class="modal-post-label" for="txtZip">Zip</label>
+                <input id="txtZip" type="number" class="input-zip" required>
+            </div>
+            <div>
+                <label class="modal-post-label" for="txtDescr">Description</label>
+                <input id="txtDescr" type="text" class="input-description" required>
+            </div>
+    
+        </div>
+        <button class="post-btn db-post">ОТПРАВИТЬ В БАЗУ ДАННЫХ</button>
+</form>
+
+    <div class="modal_shadow"></div>
+    <script src="script.js"></script>
+</body>
+</html>
